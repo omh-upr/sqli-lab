@@ -2,6 +2,14 @@ import sqlite3
 import os
 import streamlit as st
 
+st.markdown("""
+    <style>
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
+
 DB_PATH = os.path.join(os.path.dirname(__file__), "data", "challenge.db")
 
 st.title("Inventory Search")
